@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tag.sources.itmo.SchoolControllerTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-03-20T16:26:12.818Z" hostname="corvus-BoDE-WXX9" time="0.698">
+  <properties/>
+  <testcase name="getByIdTest()" classname="tag.sources.itmo.SchoolControllerTests" time="0.585"/>
+  <testcase name="updateTest()" classname="tag.sources.itmo.SchoolControllerTests" time="0.073"/>
+  <testcase name="getAllTest()" classname="tag.sources.itmo.SchoolControllerTests" time="0.014"/>
+  <testcase name="deleteTest()" classname="tag.sources.itmo.SchoolControllerTests" time="0.02"/>
+  <system-out><![CDATA[19:26:09.344 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [tag.sources.itmo.SchoolControllerTests]: SchoolControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:26:09.449 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration tag.sources.itmo.ItmoApplication for test class tag.sources.itmo.SchoolControllerTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2025-03-20T19:26:09.730+03:00  INFO 29839 --- [itmo] [    Test worker] tag.sources.itmo.SchoolControllerTests   : Starting SchoolControllerTests using Java 17.0.14 with PID 29839 (started by corvus in /home/corvus/itmo)
+2025-03-20T19:26:09.731+03:00  INFO 29839 --- [itmo] [    Test worker] tag.sources.itmo.SchoolControllerTests   : No active profile set, falling back to 1 default profile: "default"
+2025-03-20T19:26:10.260+03:00  INFO 29839 --- [itmo] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-20T19:26:10.261+03:00  INFO 29839 --- [itmo] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-03-20T19:26:10.285+03:00  INFO 29839 --- [itmo] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tag.sources.itmo.repositories.SchoolClassRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-03-20T19:26:10.286+03:00  INFO 29839 --- [itmo] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tag.sources.itmo.repositories.SchoolRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-03-20T19:26:10.287+03:00  INFO 29839 --- [itmo] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tag.sources.itmo.repositories.StudentRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-03-20T19:26:10.288+03:00  INFO 29839 --- [itmo] [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface tag.sources.itmo.repositories.WorkerRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-03-20T19:26:10.289+03:00  INFO 29839 --- [itmo] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JDBC repository interfaces.
+2025-03-20T19:26:10.302+03:00  INFO 29839 --- [itmo] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-20T19:26:10.303+03:00  INFO 29839 --- [itmo] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20T19:26:10.325+03:00  INFO 29839 --- [itmo] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 4 JPA repository interfaces.
+2025-03-20T19:26:10.667+03:00  INFO 29839 --- [itmo] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20T19:26:10.710+03:00  INFO 29839 --- [itmo] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-20T19:26:10.742+03:00  INFO 29839 --- [itmo] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-20T19:26:10.978+03:00  INFO 29839 --- [itmo] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20T19:26:11.002+03:00  INFO 29839 --- [itmo] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-20T19:26:11.164+03:00  INFO 29839 --- [itmo] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4f7bb8df
+2025-03-20T19:26:11.165+03:00  INFO 29839 --- [itmo] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-20T19:26:11.233+03:00  INFO 29839 --- [itmo] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20T19:26:11.907+03:00  INFO 29839 --- [itmo] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20T19:26:11.942+03:00  INFO 29839 --- [itmo] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20T19:26:12.320+03:00  WARN 29839 --- [itmo] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20T19:26:12.773+03:00  INFO 29839 --- [itmo] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-20T19:26:12.773+03:00  INFO 29839 --- [itmo] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-20T19:26:12.776+03:00  INFO 29839 --- [itmo] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-03-20T19:26:12.804+03:00  INFO 29839 --- [itmo] [    Test worker] tag.sources.itmo.SchoolControllerTests   : Started SchoolControllerTests in 3.264 seconds (process running for 3.991)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /schools/1
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = tag.sources.itmo.controllers.SchoolController
+           Method = tag.sources.itmo.controllers.SchoolController#getById(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":1,"title":"Best Test School","year":1936,"director":{"id":1,"fio":"First Test Teacher","birthDate":"2000-03-02T21:00:00.000+00:00"},"rating":5}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = PATCH
+      Request URI = /schools/2
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"130"]
+             Body = {"id":2,"title":"Best Test School","year":2020,"director":{"id":3,"fio":"First Test Teacher","birthDate":952030800000},"rating":5}
+    Session Attrs = {}
+
+Handler:
+             Type = tag.sources.itmo.controllers.SchoolController
+           Method = tag.sources.itmo.controllers.SchoolController#updateSchool(Long, School)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"130"]
+     Content type = text/plain;charset=UTF-8
+             Body = {"id":2,"title":"Best Test School","year":2020,"director":{"id":3,"fio":"First Test Teacher","birthDate":952030800000},"rating":5}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /schools
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = tag.sources.itmo.controllers.SchoolController
+           Method = tag.sources.itmo.controllers.SchoolController#getAllSchools()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":3,"title":"Best Test School","year":1936,"director":{"id":5,"fio":"First Test Teacher","birthDate":"2000-03-02T21:00:00.000+00:00"},"rating":5}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /schools/4
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = tag.sources.itmo.controllers.SchoolController
+           Method = tag.sources.itmo.controllers.SchoolController#deleteSchool(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 202
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,4 @@
+DELETE FROM schools CASCADE;
+DELETE FROM students CASCADE;
+DELETE FROM school_classes CASCADE;
+DELETE FROM workers CASCADE;
